@@ -712,6 +712,9 @@ class HarmonyEncodingName(str, Enum):  # noqa: D101 – simple enum stub
         return str(self.value)
 
 
+# Import Q&A module
+from .qa_module import CustomQAModule
+
 # What should be re-exported when the user does ``from harmony import *``?
 __all__ = [
     "Role",
@@ -729,4 +732,5 @@ __all__ = [
     "StreamableParser",
     "StreamState",
     "HarmonyError",
+    "CustomQAModule",
 ]
